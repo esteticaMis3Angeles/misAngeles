@@ -1,0 +1,123 @@
+/* Fondo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/estetica.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Cabecera */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.5); /* Sombra dorada brillante */
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffe4b5; /* Color dorado claro */
+    text-shadow: 0px 4px 8px rgba(255, 215, 0, 0.7);
+}
+
+/* Contenido principal */
+.main {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(255, 248, 240, 0.8); /* Fondo blanco cálido semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra para separar la caja del fondo */
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.main h2 {
+    font-size: 30px;
+    color: #d8a372; /* Color dorado */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.status {
+    background: linear-gradient(45deg, #ffefd5, #f8d7da); /* Degradado elegante */
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status:hover {
+    transform: scale(1.05); /* Crece al pasar el ratón */
+    box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5); /* Sombra rosada */
+}
+
+#status-text {
+    color: #d9534f; /* Rojo elegante */
+    font-weight: bold;
+}
+
+/* Separadores decorativos */
+.main h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #d8a372;
+    margin: 10px auto 20px auto;
+    border-radius: 2px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: pulse 2s infinite; /* Efecto de pulsación */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsapp-link img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 255, 0, 0.5); /* Sombra verde brillante */
+}
+
+/* Pie de página (opcional) */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+}

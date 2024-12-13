@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Panel de Administración</h1>
+    </header>
+    <main class="main">
+        <label for="status-select">Estado:</label>
+        <select id="status-select">
+            <option value="Abierto">Abierto</option>
+            <option value="Cerrado">Cerrado</option>
+            <option value="Ocupado">Ocupado</option>
+            <option value="Cerrado vuelvo a las HH:MM">Cerrado vuelvo a las HH:MM</option>
+        </select>
+        <div id="time-input" style="display: none;">
+            <label for="next-opening-time">Hora de apertura:</label>
+            <input type="time" id="next-opening-time">
+        </div>
+        <button onclick="saveStatus()">Guardar</button>
+    </main>
+    <script src="admin.js"></script>
+</body>
+</html>
+
